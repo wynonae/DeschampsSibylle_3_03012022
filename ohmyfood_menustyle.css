@@ -1,0 +1,263 @@
+/* LA PALETTE DU GOUT */
+
+body {
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+    background-color: rgb(241, 241, 241);
+}
+
+
+
+@media all and (min-width: 768px) {
+    
+
+
+    
+}
+@media all and (max-width: 767px) {
+
+.header_menu {
+    
+    position: relative;
+    
+}
+
+.header_menu_titre {
+    text-align: center;
+    font-family: 'shrikhand';
+}
+
+.icone_fleche {
+    text-decoration: none;
+    position: absolute;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: rgb(39, 39, 39);
+}
+
+
+.photo_menu {
+    object-fit: cover;
+    max-height: 100%;
+    width: 100%;
+}
+
+.photo_menu_big {
+    object-fit: cover;
+    width: 100%;
+    height: 313px;
+}
+
+.menu_menu {
+    width: 100%;
+    position: relative;
+    background-color:rgb(241, 241, 241);
+    padding: 15px 0;
+    border-radius: 40px 40px 0 0;
+    margin-top: -70px;
+}
+
+.menu_menu_header {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 0 20px 0 20px;
+
+}
+
+.menu_menu_titre {
+    font-size: 30px;
+    font-family: 'shrikhand';
+    font-style: italic;
+}
+
+#icone_coeur_menu {
+    font-size: 30px;
+    color: black;
+}
+
+.coeur {
+    margin-right: 20px;
+    display: flex;
+    margin-top: 20px;
+}
+
+
+
+
+.titres_menu {
+    font-size: 15px;
+    margin-left: 20px;
+    position: relative;
+    display: block;
+    margin-bottom: 3px;
+    background-color: rgb(241, 241, 241);
+    
+}
+
+.menus_entree_plat_dessert {
+    margin-bottom: 50px;
+    background-color: rgb(241, 241, 241);
+
+}
+
+.souligne {
+    width: 40px;
+    background-color: #99E2D0;
+    margin-left: 20px;
+    height: 3px;
+}
+rrr.titres_menu::after {
+content:"";
+width: 20px;
+height: 4px;
+position: absolute;
+padding-left: 20px;
+color: turquoise;
+display: block;
+}
+
+.liste_menu {
+    text-decoration: none;
+    padding-left: 20px;
+    background-color: rgb(241, 241, 241);
+}
+
+.plats_menu {
+    display: flex;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgb(202, 202, 202);
+    font-size: 15px;
+    margin: 20px 30px 0 0;
+    padding: 1px 0 1px 10px;
+    cursor: pointer; 
+}
+
+
+
+.texte_menu {
+    display: flex;
+    flex: 100%;
+    flex: 1;
+    justify-content: space-between;
+    max-width: 100%;
+    transition: all 700ms;
+}
+
+.texte_menu2 {
+    
+}
+.titre_plats {
+    font-size: 15px;
+}
+.texte_plat {
+    font-size: 13px;
+}
+.prix_plats {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 11px;
+    padding-right: 15px;
+   
+}
+
+.encoche {
+    
+    
+    flex: 0%;
+    background-color: #99e2d0;
+    color: #f6f6f6;
+    font-size: large;
+    text-align: center;
+    line-height: 4.8em;
+    white-space: nowrap;
+    transform: translateX(100px);
+    cursor: pointer;
+    transition: all 700ms;
+    height: 80px;
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+    
+}
+.plats_menu:hover > .encoche {
+   
+    transform: rotate(0deg);
+    flex: 25%;
+    transform: translateX(0px);
+    background-color: #99E2D0;
+    cursor: pointer;
+    color: #f6f6f6;
+}
+.encoche:hover {
+
+}
+
+#icone_cercle:hover {
+    transform: rotate(359deg);
+    transition: transform 700ms;
+}
+
+
+    
+
+
+#icone_cecle::before {
+    content: "\f058";
+}
+
+
+
+.bouton_commander_menu {
+
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.bouton_explorer {
+    text-align: center;
+    padding: 15px 20px;
+    background: linear-gradient(150deg, #ff79da 0%, #9356dc 100%);
+    color: white;
+    font-weight: bold;
+    border-radius: 28px;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+
+}
+
+.bouton_explorer:hover {
+    box-shadow: 5px 5px 7px rgb(189, 165, 199);
+    transition: 40ms ease-in-out;
+    filter: brightness(1.2);
+}
+
+.footer_bloc {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    background-color: rgb(39, 39, 39);
+    color: ghostwhite;
+}
+
+.footer_titre {
+    font-size: 20px;
+    font-family: 'shrikhand';
+}
+
+.footer_texte {
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+#icone_footer1 {
+    padding-right: 7px;
+}
+
+#icone_footer2 {
+    font-size: 10px;
+    padding-right: 7px;
+}
+}
