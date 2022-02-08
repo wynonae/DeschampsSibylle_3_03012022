@@ -7,6 +7,81 @@ body {
     font-family: 'roboto', sans-serif;
 }
 
+.chargement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: white;
+    animation: chargement .01s ;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    z-index: 1000;
+    
+    
+}
+
+@keyframes chargement {
+    100% {
+        opacity: 0;
+        z-index: -10;
+    }
+
+}
+
+@keyframes ball {
+    0% {
+        transform: translateX(0);
+        
+    }
+    25% {
+        transform: translateX(.6rem);
+        
+    }
+    75% {
+        transform: translateX(-.2rem);
+        
+    }
+    100% {
+        transform: translateX(0);
+        
+    }
+}
+
+.chargement_objet {
+    display: flex;
+    width: 5rem;
+    justify-content: space-between;
+}
+
+.chargement_objet_o {
+    height: 16px;
+    width: 16px;
+    border-radius: 16px ;
+    animation-name: ball;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: none ;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+}
+.chargement_objet_1 {
+    background-color: #9356dc;
+
+}
+.chargement_objet_2 {
+    background-color: #99E2D0;
+    animation-delay: .25s;
+}
+.chargement_objet_3 {
+    background-color: #ff79da;
+    animation-delay: .5s;
+}
 
 .header_acceuil {
     display: flex;
@@ -567,3 +642,4 @@ display: block;
         padding: 30px 150px;
 }
 
+}
