@@ -255,20 +255,25 @@ body {
    
 }
 
-#icone_coeur {
+ #icone_coeur {
     font-size: 30px;
-    position: absolute;
+ }
+
+ #icone_coeur_active {
+    font-size: 30px;
+ }
+    /* position: absolute;
     text-align: center;
     display: flex;
     
-}
+} */
 
-#icone_coeur::before {
+/* #icone_coeur::before {
 
     content: "\f004";
-}
+} */
 
-#icone_coeur_active {
+/* #icone_coeur_active {
     font-size: 30px;
     color: transparent;
     transition: all 350ms;
@@ -277,15 +282,15 @@ body {
     justify-content: center;
     position: absolute;
     
-}
-#icone_coeur_active:hover {
+} */
+/* #icone_coeur_active:hover {
     background: linear-gradient(0deg,#9356dc,#ff79da);
     
 
 }
 #icone_coeur_active::before {
     content: "\f004";
-}
+} */
 
 
 .footer_bloc {
@@ -420,6 +425,13 @@ body {
 @media all and (max-width: 767px) {
 
 
+.coeur:hover .fa,
+.coeur .far {
+    display: none;
+}
+.coeur:hover .far {
+    display: inline;
+}
 
 .fonctionnement {
     margin-left: 30px;
