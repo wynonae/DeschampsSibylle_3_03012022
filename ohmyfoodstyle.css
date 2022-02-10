@@ -257,6 +257,7 @@ body {
 
  #icone_coeur {
     font-size: 30px;
+    display: flex;
  }
 
  #icone_coeur_active {
@@ -282,10 +283,15 @@ body {
     position: absolute;
     
 } 
- #icone_coeur_active:hover {
-    background: linear-gradient(0deg,#9356dc,#ff79da);
+ #icone_coeur:hover {
+    opacity: 0;
     
 
+}
+
+#icone_coeur:hover > #icone_coeur_active {
+    opacity: 1;
+    background-color: #9356dc;
 }
 #icone_coeur_active::before {
     content: "\f004";
