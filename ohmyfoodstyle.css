@@ -257,45 +257,16 @@ body {
 
  #icone_coeur {
     font-size: 30px;
-    display: flex;
  }
 
  #icone_coeur_active {
     font-size: 30px;
- position: absolute;
-    text-align: center;
-    display: flex;
     
 } 
 
-#icone_coeur::before {
 
-    content: "\f004";
-} 
 
- #icone_coeur_active {
-    font-size: 30px;
-    color: transparent;
-    transition: all 350ms;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    
-} 
- #icone_coeur:hover {
-    opacity: 0;
-    
 
-}
-
-#icone_coeur:hover > #icone_coeur_active {
-    opacity: 1;
-    background-color: #9356dc;
-}
-#icone_coeur_active::before {
-    content: "\f004";
-} 
 
 
 .footer_bloc {
@@ -430,11 +401,11 @@ body {
 @media all and (max-width: 767px) {
 
 
-.coeur:hover .fa,
-.coeur .far {
+.coeur:hover .far,
+.coeur .fa {
     display: none;
 }
-.coeur:hover .far {
+.coeur:hover .fa {
     display: inline;
 }
 
