@@ -404,9 +404,12 @@ body {
 .coeur:hover .far,
 .coeur .fa {
     display: none;
+    background: linear-gradient(0deg, #9356dc, #ff79da);
+    transition-duration: 25ms;
 }
 .coeur:hover .fa {
     display: inline;
+    
 }
 
 .fonctionnement {
