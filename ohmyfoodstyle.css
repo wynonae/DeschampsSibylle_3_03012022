@@ -225,24 +225,34 @@ body {
 }
 
 
-.restaurant_texte {
+///.restaurant_texte {
     padding: 0px 15px;
     
 }
+
+.restaurant_texte {
+    flex: 1;
+}
+
 .restaurant_nom {
     font-size: 20px;
     text-decoration: none;
     color: black;
-    
+    margin: 0 0 .25rem;
 }
+
 
 .restaurant_endroit {
     color: black;
     font-size: 15px;
+    margin: 0;
     
 }
 
-.coeur {
+.restaurant_choix {
+    display: flex;
+}
+//.coeur {
     margin-right: 20px;
     display: flex;
     margin-top: 20px;
@@ -262,11 +272,100 @@ body {
  #icone_coeur_active {
     font-size: 30px;
     
+ position: absolute;
+    text-align: center;
+    display: flex;
+    
 } 
 
+#icone_coeur::before {
+
+    content: "\f004";
+}
+
+#icone_coeur_active {
+    font-size: 30px;
+    color: transparent;
+    transition: all 350ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    
+}
+#icone_coeur_active:hover {
+    background: linear-gradient(0deg,#9356dc,#ff79da);
+    
+
+}
+#icone_coeur_active::before {
+    content: "\f004";
+}
+
+.coeur_icone, .bouton_menu::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.bouton_menu::before {
+    opacity: 0;
+    transition: .5s;
+    content: "";
+    background: linear-gradient(0deg, #9356dc, #ff79da);
+}
+
+.bouton_menu {
+    height: 2rem;
+    width: 2rem;
+    border: 0 solid transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    background-color: #000;
+}
+
+.fa-heart::before {
+    content: "\f004";
+}
+
+.coeur_icone {
+    transition-duration: .28s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: lighten;
+}
+
+.coeur {
+    background-color: rgb(245, 245, 245);
+}
+
+.fab, .far {
+    font-weight: 400;
+}
+
+.fa-2x {
+    font-size: 2em;
+}
+
+.fa, .fas {
+    font-weight: 900;
+}
+
+.bouton_menu:hover::before {
+    opacity: 1;
+}
 
 
-
+.bouton_menu:hover .coeur_icone_vide {
+    opacity: 0;
+}
 
 
 .footer_bloc {
@@ -387,12 +486,18 @@ body {
      height: 18rem;
      border-radius: 15px 15px 0 0;
  }
- .infos_restaurants {
+ /////.infos_restaurants {
      display: grid;
      grid-template-columns: auto auto;
      align-items: centeer;
      justify-content: space-between;
  }
+    .infos_restaurants {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 1rem
+    }
 
 }
 
